@@ -35,5 +35,4 @@ func Worker(worker int, tasks chan int, result chan string) {
 	for task := range tasks {
 		result <- fmt.Sprintf("worker %d processed task %d", worker, task)
 	}
-
 }
