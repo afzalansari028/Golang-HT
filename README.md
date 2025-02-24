@@ -1,9 +1,9 @@
 ## IMP SQL Queries
 
-### Highest Salary from Each Department  
+```sql
+### 1️⃣ Highest Salary from Each Department  
 This query retrieves the highest salary for each department by joining the `employee` and `department` tables.
 
-```sql
 select d.department_name, MAX(e.employee_salary)
 from employee e
 join department d on e.department_id = d.department_id
